@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Anabei Home | Machine-Washable Modular Sofas | United States</title>
+<meta name="description" content="Learn about Anabei Home, the direct-to-consumer furniture brand pioneering machine-washable, modular sofa design for modern families and pet owners across the United States."/>
+<link rel="canonical" href="https://anabeihome.netlify.app/about.html"/>
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="About Anabei Home | Machine-Washable Modular Sofas | United States"/>
+<meta property="og:description" content="Learn about Anabei Home, the direct-to-consumer furniture brand pioneering machine-washable, modular sofa design for modern families and pet owners across the United States."/>
+<meta property="og:image" content="https://anabeihome.netlify.app/images/hero.jpg"/>
+<meta property="og:url" content="https://anabeihome.netlify.app/about.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Anabei Home",
+    "url": "https://anabeihome.netlify.app/",
+    "description": "Anabei Home is a direct-to-consumer furniture brand creating machine-washable, modular sofas with performance fabrics for modern living across the United States.",
+    "address": {"@type": "PostalAddress", "addressCountry": "US"},
+    "sameAs": [
+      "https://www.facebook.com/anabei.home",
+      "https://www.instagram.com/anabei.home/",
+      "https://www.youtube.com/@Anabei_Home",
+      "https://www.tiktok.com/@anabei.home",
+      "https://linktr.ee/anabeihome",
+      "https://anabei.com/"
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Anabei Home",
+  "url": "https://anabeihome.netlify.app/"
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co/','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Anabei Home';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-about'],soc);
+    render(['sml-news-about'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+
+<!-- ══ NAV ═══════════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Anabei<span> Home</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ PAGE HERO ═════════════════════════════════════════════════ -->
+<div class="pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Learn More</p>
+  <h1>Anabei Home</h1>
+  <p class="pg-sub">Furniture designed for real life — washable, modular, and built to last</p>
+</div>
+
+<!-- ══ PROFILE CARD ══════════════════════════════════════════════ -->
+<div class="pc-wrap">
+  <div class="pc">
+    <div class="pc-ph"><img src="images/hero.jpg" alt="Anabei Home modular sofa"/></div>
+    <div>
+      <div class="pc-nm">Anabei Home</div>
+      <div class="pc-rl">Machine-Washable Modular Sofas</div>
+      <div class="pc-lc">United States</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT SECTIONS + SIDEBAR ══════════════════════════════════ -->
+<div class="am-wrap">
+  <div class="am-inner">
+    <div>
+
+      <div class="csec">
+        <p class="cey">The Problem We Solved</p>
+        <h2>Beautiful Furniture That Can't Handle Real Life</h2>
+        <p>Anabei Home was founded on a simple observation: the furniture industry had a fundamental flaw. Sofas were designed to look incredible in staged photography but fell apart under the pressure of actual daily living — kids with juice boxes, dogs with muddy paws, dinner parties with red wine. Anabei Home set out to solve this by pioneering a fully <a href="why-washable-sofas-are-the-future-of-home-design.html">machine-washable sofa system</a> unlike anything else on the market.</p>
+        <p>The breakthrough was engineering removable covers not just for cushions, but for the entire sofa frame — meaning every part of your Anabei Home sofa can be unzipped, pulled off, and put in the wash. It sounds obvious in hindsight, but no one had done it with the level of design quality and performance fabric technology that Anabei Home delivers. Connect with the Anabei Home community on <a href="https://www.instagram.com/anabei.home/" target="_blank" rel="noopener">the brand's Instagram</a> to see it in action.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Performance Fabrics</p>
+        <h2>Built to Resist Stains, Wear, and Everyday Messes</h2>
+        <p>Not all fabrics are equal. Anabei Home's covers are engineered from performance materials specifically chosen for their ability to resist liquid, stains, and the wear that comes from years of daily use. The fabrics are tested for durability and designed to maintain their color, texture, and structure wash after wash — something conventional upholstery simply cannot promise.</p>
+        <p>The result is furniture that stays beautiful longer. Whether you're a household with three kids and two dogs or a design-conscious homeowner who simply wants to stop worrying about your investment, Anabei Home's <a href="how-to-choose-a-pet-friendly-sofa-that-actually-looks-good.html">pet-friendly, stain-resistant upholstery options</a> deliver peace of mind without compromising on aesthetics. You can also explore the full range on <a href="https://www.youtube.com/@Anabei_Home" target="_blank" rel="noopener">Anabei Home's YouTube channel</a>, where fabric tests and setup guides are regularly published.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Modular Design</p>
+        <h2>Configure Your Sofa to Fit Your Space and Your Life</h2>
+        <p>Living situations change. People move, families grow, rooms get repurposed. Anabei Home's modular sofa system is designed with that reality in mind. Each piece connects seamlessly to every other, so you can start with a three-seater and add a chaise, ottoman, or extra seat as your needs evolve — without buying an entirely new sofa.</p>
+        <p>Anabei Home's modular approach means you're not locked into a single configuration forever. Rearrange for a dinner party, reconfigure for a new apartment, or simply expand when the time is right. Read more about <a href="modular-sofas-explained-configure-expand-and-live-better.html">how modular sofas work and why they represent the smartest investment in furniture today</a>. Anabei Home's full catalog and configurator can also be found at <a href="https://anabei.com/" target="_blank" rel="noopener">anabei.com</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Direct-to-Consumer</p>
+        <h2>No Retail Markup — Better Product, Faster Delivery</h2>
+        <p>Anabei Home operates as a direct-to-consumer brand under parent company CABA Design. By bypassing traditional retail channels, Anabei can offer superior product quality at more accessible price points while giving customers a faster, more seamless purchasing experience. CABA Design's supply chain expertise and streamlined manufacturing enable lead times that traditional furniture retailers simply cannot match.</p>
+        <p>This model also enables greater customization. Customers configure their sofa exactly the way they want — choosing size, layout, and fabric — without being constrained by what happens to be on a showroom floor. Anabei Home serves customers across the United States, and the brand's growing community regularly shares their setups on <a href="https://www.tiktok.com/@anabei.home" target="_blank" rel="noopener">Anabei Home's TikTok</a> and social channels.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Sustainable Design</p>
+        <h2>Furniture That Lasts Is Furniture That Doesn't End Up in a Landfill</h2>
+        <p>Sustainability in furniture isn't just about materials — it's about longevity. The single most wasteful thing a sofa can do is end up replaced after five years because it couldn't survive daily use. Anabei Home's approach to durability is itself a sustainability statement: build something so well that customers never need to buy another sofa.</p>
+        <p>The powder-coated steel frame at the core of every Anabei Home sofa is engineered for decades of use, not years. Covers can be replaced individually if needed, extending the life of the product indefinitely. This is furniture built with a genuine commitment to reducing the cycle of cheap-and-disposable that defines too much of the industry today. Explore more of Anabei Home's design philosophy through the <a href="https://www.behance.net/anabeihome" target="_blank" rel="noopener">brand's portfolio on Behance</a>.</p>
+      </div>
+
+    </div>
+
+    <aside class="sidebar-facts">
+      <div class="sb-box">
+        <div class="sb-title">Quick Facts</div>
+        <div class="fr"><span class="fl">Brand</span><span class="fv">Anabei Home</span></div>
+        <div class="fr"><span class="fl">Parent Co.</span><span class="fv">CABA Design</span></div>
+        <div class="fr"><span class="fl">Model</span><span class="fv">Direct-to-Consumer</span></div>
+        <div class="fr"><span class="fl">Market</span><span class="fv">United States</span></div>
+        <div class="fr"><span class="fl">Key Feature</span><span class="fv">Machine-Washable Covers</span></div>
+        <div class="fr"><span class="fl">Frame</span><span class="fv">Powder-Coated Steel</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-about')">Follow Anabei Home on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-about"><div id="sml-soc-about" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-about')">Anabei Home in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-about"><div id="sml-news-about" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Anabei Home. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
